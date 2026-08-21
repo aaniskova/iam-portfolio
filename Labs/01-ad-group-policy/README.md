@@ -1,4 +1,4 @@
-# Lab 01: Active Directory – GPO-Enforced Security Controls
+# Lab 01: Active Directory – Enforcing Controls
 _Configuring Active Directory Group Policy Objects (GPOs) to enforce least-privilege and defense-in-depth security controls._
 
 **Tools:** Active Directory · Group Policy Management · TryHackMe
