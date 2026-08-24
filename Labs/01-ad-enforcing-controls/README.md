@@ -31,12 +31,19 @@ My actions:
 - Create a new GPO called Restrict Control Panel Access
 - Configure it: User Configuration → Administrative Templates → Control Panel → Prohibit access to Control Panel and PC Settings → Enabled
 
-_Screenshot 'Prohibit access to Control Panel'_
+![New GPO created](screenshots/03-gpo-new.jpeg)
+![Restrict Control Panel Access GPO](screenshots/04-gpo-restrict-control-panel-access.jpeg)
+![Control Panel restriction enabled](screenshots/05-gpo-control-panel-enabled.jpeg)
 
 Once the GPO was configured, I linked it to all of the OUs corresponding to users who shouldn't have access to the Control Panel of their PCs. In this case, I linked the Marketing, Management and Sales OUs by dragging the GPO to each of them.
 
+![GPO linked to Sales OU](screenshots/06-gpo-linking-to-sales.jpeg)
+![GPO successfully linked](screenshots/07-gpo-linked.jpeg)
+
 To verify that the restriction has worked, I logged in via RDP as Mark from Marketing and tried to open Control Panel.
-_Mark Screenshots_
+
+![RDP session marker](screenshots/10-rdp-mark.jpeg)
+![User access restricted confirmation](screenshots/11-user-restricted.jpeg)
 
 ### Scenario 2: Enforcing a stronger password requirement
 Default Domain Policy applies to the whole domain, and any change to it would affect all computers. I learned to change the minimum password length policy to require users to have at least 10 characters in their passwords (the number comes from the THM lab).
@@ -44,16 +51,17 @@ Default Domain Policy applies to the whole domain, and any change to it would af
 My actions:
 - Default Domain Policy → Edit → Computer Configuration → Policies → Windows Setting → Security Settings → Account Policies → Password Policy
 
-_Screenshot 'Minimum password length'_
+![Default Domain Policy edit screen](screenshots/01-default-domain-policy-edit.jpeg)
+![Minimum password length setting](screenshots/02-minimum-password-length.jpeg)
 
 ### Scenario 3: Automatically locking workstations and server sessions after 5 minutes of inactivity
 I set the inactivity limit to 5 minutes so that any interactive session — on a workstation or a server — locks automatically if left idle (the number comes from the THM lab).
 
-_Screenshot 'Machine inactivity limit'_
+![Auto lock screen setting](screenshots/08-auto-lock-screen.jpeg)
 
 After closing the GPO editor, I linked the GPO to the root domain by dragging the GPO to it, as I wanted the GPO to affect all of our computers.
 
-_Screenshot 'Auto lock screen'_
+![GPO linked to root domain](screenshots/09-gpo-linked-to-root-domain.jpeg)
 
 ---
 ## Learnings
