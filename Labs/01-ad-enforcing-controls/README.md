@@ -35,6 +35,9 @@ _Screenshot 'Prohibit access to Control Panel'_
 
 Once the GPO was configured, I linked it to all of the OUs corresponding to users who shouldn't have access to the Control Panel of their PCs. In this case, I linked the Marketing, Management and Sales OUs by dragging the GPO to each of them.
 
+To verify that the restriction has worked, I logged in via RDP as Mark from Marketing and tried to open Control Panel.
+_Mark Screenshots_
+
 ### Scenario 2: Enforcing a stronger password requirement
 Default Domain Policy applies to the whole domain, and any change to it would affect all computers. I learned to change the minimum password length policy to require users to have at least 10 characters in their passwords (the number comes from the THM lab).
 
