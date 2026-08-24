@@ -10,7 +10,7 @@ Aspiring IAM Analyst transitioning from research-led strategy. Building practica
 ---
 ## 🔬 Labs
 ### 1. Active Directory – Enforcing Controls
-- **Status:** In progress
+- **Status:** Complete
 - **Tools**: Active Directory · Group Policy Management
 - **Scenario:** Configured Active Directory Group Policy Objects (GPOs) to enforce least-privilege and defense-in-depth security controls, such as blocking non-IT users from accessing the Control Panel, enforcing stronger password requirements, and automatically locking inactive stations.
 - [View Lab →](Labs/01-ad-enforcing-controls/README.md)
