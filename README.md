@@ -9,12 +9,21 @@ Aspiring IAM Analyst transitioning from research-led strategy. Building practica
 
 ---
 ## 🔬 Labs
- _Coming soon – first lab write-up in progress._
+### 1. Active Directory – Enforcing Controls
+- **Status:** In progress
+- **Tools**: Active Directory · Group Policy Management
+- **Scenario:** Configured Active Directory Group Policy Objects (GPOs) to enforce least-privilege and defense-in-depth security controls, such as blocking non-IT users from accessing the Control Panel, enforcing stronger password requirements, and automatically locking inactive stations.
+- [View Lab →](Labs/01-ad-enforcing-controls/README.md)
+
+### 2. Active Directory – Delegating Privileges
+- **Status:** Complete
+- **Tools**: Active Directory · Delegation of Control Wizard · PowerShell
+- **Scenario:** Delegated a scoped privilege to the head of IT Support to reset user passwords in the Sales, Marketing, and Management organizational units of the fictional company.
+- [View Lab →](Labs/02-ad-delegation/README.md)
 
 ---
-
 ## 🧾 Certifications
-| Certification | Issuer | Year |
+| Certificate | Issuer | Year |
 | --- | --- | --- |
 | Introduction to Cybersecurity | Harvard University (CS50) | 2026 |
 | ISC2 CC (Certified in Cybersecurity) | ISC2 | 2026 |
