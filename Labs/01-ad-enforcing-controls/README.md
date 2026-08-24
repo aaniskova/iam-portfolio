@@ -1,7 +1,9 @@
 # Lab 01: Active Directory – Enforcing Controls
 _Configuring Active Directory Group Policy Objects (GPOs) to enforce least-privilege and defense-in-depth security controls._
 
-**Tools:** Active Directory · Group Policy Management · TryHackMe
+This exercise is part of the "Active Directory Basics" room on TryHackMe.
+
+**Tools:** Active Directory · Group Policy Management
 
 ---
 ## Business context
@@ -21,7 +23,8 @@ To practice this skill, I completed the “Active Directory Basics” room on Tr
 2. Scenarios 2 and 3 help enforce defense-in-depth: ensuring that users’ actions strengthen the company’s security posture instead of weakening it. For example, if a user has a weak password (like something from a rockyou base), their account becomes easier to compromise. Same with unlocked, idle sessions – users may step away from their workstations or leave remote administrative sessions active without locking or terminating them, potentially allowing unauthorized individuals to use an already authenticated session.
 
 ---
-## Scenario 1: Blocking non-IT users from accessing the Control Panel
+## What I did
+### Scenario 1: Blocking non-IT users from accessing the Control Panel
 The goal is to restrict access to the Control Panel across all machines to only the users that are part of the IT department. Users of other departments shouldn't be able to change the system's preferences.
 
 My actions:
@@ -32,8 +35,7 @@ _Screenshot 'Prohibit access to Control Panel'_
 
 Once the GPO was configured, I linked it to all of the OUs corresponding to users who shouldn't have access to the Control Panel of their PCs. In this case, I linked the Marketing, Management and Sales OUs by dragging the GPO to each of them.
 
----
-## Scenario 2: Enforcing a stronger password requirement
+### Scenario 2: Enforcing a stronger password requirement
 Default Domain Policy applies to the whole domain, and any change to it would affect all computers. I learned to change the minimum password length policy to require users to have at least 10 characters in their passwords (the number comes from the THM lab).
 
 My actions:
@@ -41,8 +43,7 @@ My actions:
 
 _Screenshot 'Minimum password length'_
 
----
-## Scenario 3: Automatically locking workstations and server sessions after 5 minutes of inactivity
+### Scenario 3: Automatically locking workstations and server sessions after 5 minutes of inactivity
 I set the inactivity limit to 5 minutes so that any interactive session — on a workstation or a server — locks automatically if left idle (the number comes from the THM lab).
 
 _Screenshot 'Machine inactivity limit'_
