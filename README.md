@@ -5,8 +5,6 @@ Hands-on Identity &amp; Access Management labs built to demonstrate practical IA
 ## 👩‍💻 About
 Aspiring IAM Analyst transitioning from research-led strategy. Building practical expertise in Active Directory and Microsoft Entra ID through lab projects. ISC2 Certified in Cybersecurity (CC).
 
-**Targeting**: IAM Analyst | IAM Specialist
-
 ---
 ## 🔬 Labs
 ### 1. Active Directory – Enforcing Controls
