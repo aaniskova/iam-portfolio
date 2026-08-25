@@ -21,7 +21,7 @@ Aspiring IAM Analyst transitioning from research-led strategy. Building practica
 
 ---
 ## 🕵️‍♀️ Research
-### 1. Brute force attack on Dashlane user accounts
+### 1. Brute Force Attack on Dashlane User Accounts
 - **Status:** In progress
 - **Description:** Analyzed the 2026 Dashlane brute-force attack, examining its OTP-based device registration flow, rate-limiting controls, and the security gap that enabled account compromise.  
 
